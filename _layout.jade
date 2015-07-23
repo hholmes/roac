@@ -1,0 +1,20 @@
+doctype
+html
+  head
+    title Ridgewood Older Adult Center
+
+    link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700")
+    link(rel="stylesheet" href="/skeleton.css")
+    //link(rel="stylesheet" href="/frameless.css")
+    link(rel="stylesheet" href="/main.css")
+
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+  body
+    .container
+      != yield
+      #footer
+        div.four.columns.offset-by-one
+          p Ridgewood Older Adult Center and Services
+          p 59-14 70th Avenue, Ridgewood, NY 11385
+          p Phone 718.456.2000 Fax: 718.456.5346
+        div.seven.columns.text-right
