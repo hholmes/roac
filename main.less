@@ -1,8 +1,27 @@
+// Breakpoints
+@bp-larger-than-mobile    : 400px;
+@bp-larger-than-phablet   : 550px;
+@bp-larger-than-tablet    : 750px;
+@bp-larger-than-desktop   : 1000px;
+@bp-larger-than-desktophd : 1200px;
+
 body {
   padding: 50px 20px 0;
   background: #f4f4f7;
   color: #444;
   margin: 0;
+}
+
+@media (min-width: @bp-larger-than-mobile) {
+  .section {
+    padding: 30px 10px;
+  }
+}
+
+@media (min-width: @bp-larger-than-tablet) {
+  .section {
+    padding: 30px 50px;
+  }
 }
 
 .text-right {
@@ -28,7 +47,6 @@ h4 {
 
 #lists {
   background: #fff;
-  padding: 2.25em 0;
   div {
     padding: 1em;
   }
@@ -50,7 +68,6 @@ img {
 
 
 #footer {
-  padding: 3em 3em 3em 0;
   font-size: .8em;
   color: #999;
   text-align: left;
